@@ -1,0 +1,509 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+   
+        .header{
+    width: 100%;
+    height: 6rem;
+    background-color: #f1f1f1;
+    color: white;
+    align-items: center;
+    padding: 0 5%;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.25);
+    z-index: 10;
+    display: flex;
+}
+        .nav{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            justify-content: space-between;
+            margin-left: 30%;
+            margin-right: 20%;
+            
+            
+        }
+        li{
+            list-style: none;
+            margin-top: 3%;
+            margin-left: 10%;
+            color: rgb(8, 56, 246);
+        }
+       a{
+        margin-top: 3%;
+        text-decoration: none;
+        color: rgb(8, 56, 246);
+       }
+       .photologo{
+    width: 18rem;
+    height: 12.5rem;
+  
+    position:relative;
+    right: 3rem;
+}
+       .formdivi{
+    background: url(./assets/4-scottish_highlands_matt_tilghman_final.jpg) no-repeat center center fixed;
+    width: 100%;
+    height: 35rem;
+    display: flex;
+    justify-content: center;
+    background-size: cover;
+    align-items: center;
+    animation: slideshow 20s infinite;
+}
+@keyframes slideshow {
+    0% {
+      background: url(./assets/4-scottish_highlands_matt_tilghman_final.jpg) no-repeat center center fixed;
+      background-size: cover;
+    }
+    25% {
+      background: url(./assets/photo-1501785888041-af3ef285b470.jpg) no-repeat center center fixed;
+      background-size: cover;
+    }
+    50% {
+      background: url(./assets/santorini-greece-8-1.webp) no-repeat center center fixed;
+      background-size: cover;
+    }
+    75% {
+      background: url(./assets/1920_dubai-2.jpg) no-repeat center center fixed;
+      background-size: cover;
+    }
+  }
+  html,
+  body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+  }
+  
+  #formdivi {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+  }
+  
+  .form2 {
+    font-style: initial;
+    background-color: rgba(0, 0, 0, 0.5);
+    border-radius: 10px;
+    width: 80%;
+    height: 70%;
+    display: flex;
+    padding-left: 7.5rem;
+    align-items: center;
+    flex-direction: unset;
+    flex-wrap: wrap;
+    color: white;
+    font-size: 1.3rem;
+    padding-block-start: 2%;
+  }
+  
+  .inputDivi {
+    width: 30rem;
+    height: 6rem;
+    margin: 1%;
+    margin-top: 0;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .checkboxDivi {
+    width: 100%;
+    height: 2rem;
+    margin-left: 0.5%;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+  }
+  
+  .checkboxInputi {
+    width: 1rem;
+    margin-right: 1rem;
+    margin-bottom: 0.6rem;
+  }
+  
+  .inputDateDivi {
+    width: 14.1rem;
+    height: 6rem;
+    margin: 1%;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .inputi {
+    width: 30rem;
+    height: 2.5rem;
+    border-radius: 20px;
+    height: 60px;
+  }
+  
+  .formLabeli {
+    margin: 1%;
+  }
+  
+  .checkboxLabeli {
+    margin-left: -0.5%;
+    margin-right: 1.5%;
+  }
+  
+  .inputdatee {
+    height: 2.5rem;
+    border-radius: 20px;
+  }
+ 
+  .buttoni {
+    width: 14.5rem;
+    height: 3rem;
+    border-radius: 20px;
+    font-family: initial;
+    background-color: #333;
+    color: white;
+    font-size: 1.1rem;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    position: absolute;
+    right: 17rem;
+    bottom: 3rem;
+   margin-bottom: 1%;
+  }
+  
+  .buttoni:hover {
+    background-color: #555;
+  }
+  
+  .buttoni:active {
+    background-color: #444;
+  }
+  .footer {
+   
+   padding: 40px 0;
+   background-color: rgb(3, 8, 74);
+   
+ 
+ }
+ 
+ .containerFooter {
+   max-width: 100%;
+   margin: 0 auto;
+   padding: 0 20px;
+  
+ }
+ 
+ .footer__content {
+   display: flex;
+   flex-wrap: wrap;
+   justify-content: space-between;
+  
+   margin-left: 10%;
+ }
+ 
+ .footer__section {
+   flex-basis: 30%;
+   margin-bottom: 30px;
+  
+ }
+ 
+ .footer__section-title {
+   font-size: 18px;
+   font-weight: bold;
+   margin-bottom: 10px;
+   color: white;
+   font-size: 30px;
+ }
+ 
+ .footer__section-text {
+   font-size: 14px;
+   color: rgb(255, 255, 255);
+   margin-bottom: 5px;
+ }
+ 
+ .footer__social-icons {
+   display: flex;
+   align-items: center;
+   color: #ffffff;
+ }
+ 
+ .footer__social-link {
+   color: #666;
+   margin-right: 10px;
+   font-size: 20px;
+   color: white;
+ }
+ 
+ .footer__bottom {
+   text-align: center;
+   margin-top: 20px;
+ }
+ 
+ .footer__bottom-text {
+   font-size: 12px;
+   color: #ffffff;
+   margin-right: 3%;
+ }
+ .containerdiv{
+    background-color:#f1f1f1;
+    width: 100%;
+    height: 42rem;
+    
+}
+
+.photodiv{
+    display: flex;
+    justify-content: space-evenly;
+   
+}
+
+.photodiv img {
+    width: 30rem;
+    height: 15rem;
+ 
+
+}
+
+.textdiv{
+    color: black;
+    margin-left: 25rem;
+}
+.textdiv h2{
+    padding-top: 10px;
+    font-family: inherit;
+}
+
+.textdiv p{
+    color: #333;
+    font-family: initial;
+    margin-left: 3.5rem;
+}
+
+.secondphotos{
+    display: flex;
+   justify-content: space-evenly;
+}
+
+.secondphotos img{
+    width: 25rem;
+    height: 12rem;
+    margin-top: 30px;
+    margin-top: -4.5rem;
+    
+    
+}
+
+.photodiv h2{
+    position: relative;
+    color: rgb(123, 9, 9);
+    padding-left: 1rem;
+    padding-top: 40px;
+ 
+   
+}
+
+.secondphotos h2{
+    position: relative;
+    color: white;
+    padding-left: 1rem;
+    margin-top: 10%;
+    
+}
+.ksspng img{
+    width: 2rem;  
+      height: 1rem;
+    position: relative;
+   left: 12rem;
+   margin-top: -10%;
+
+
+}
+.allpng img{
+    width: 2rem;  
+    height: 1rem;
+  position: relative;
+ left: 9rem;
+
+
+}
+.ullpng img{
+    width: 2rem;  
+    height: 1rem;
+  position: relative;
+ left: 8.5rem;
+ bottom: 0.3rem; 
+}
+.trrpng img{
+    width: 2rem;  
+    height: 1rem;
+  position: relative;
+ left: 9rem;
+ bottom: 0.3rem; 
+}
+.eggpng img{
+    width: 2rem;  
+    height: 1rem;
+  position: relative;
+ left: 7.6rem;
+ bottom: 0.3rem; 
+ margin-top: 10%;
+}
+ .egp{
+    margin-top: 10%;
+    height: 350px;
+    width: 100%;
+ }
+ /* Add any additional styling or modifications as per your requirements */
+ 
+  
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <img src="./assets/logobuses.png" alt="" class="photologo">
+            <ul class="nav">
+               
+                <li class="Home">Home</li>
+                <li class="Countries"><a href="file:///C:/Users/bledi/Desktop/PixieJs/index.html">Countries</a></li>
+                <li class="Offers">Offers</li>
+                <li class="About Us">AboutUs</li>
+                
+            </ul>
+
+  
+           
+        </div>
+       
+            <div class='formdivi'>
+                <form class='form2'>
+                <div class='checkboxDivi'>
+                    <input class='checkboxInputi' id='formdivi' type="radio" name="roundTip"/>
+                    <label class='checkboxLabeli'>Udheto me kompanin tone</label>
+          
+                    <input class='checkboxInputi' type="radio" name="oneWay"/>
+                    <label class='checkboxLabeli'>Oneway</label>
+          
+                    <input class='checkboxInputi' type="radio" name="multiCity"/>
+                    <label class='checkboxLabeli'>Multicity</label>
+                  </div>
+                  <div class='inputDivi'>
+                    <label class='formLabeli'>From</label>
+                    <select class='inputi' name="from" id="from">
+                      <option value="Prishtine">Prishtine</option>
+                      <option value="Podujeve">Podujeve</option>
+                      <option value="Durres">Durres</option>
+                    </select>
+                  </div>
+                  <div class='inputDivi'>
+                    <label class='formLabeli'>To</label>
+                    <select class='inputi' name="to" id="to">
+                      <option value="Prishtine">Prishtine</option>
+                      <option value="Podujeve">Podujeve</option>
+                      <option value="Durres">Durres</option>
+                    </select>
+                  </div>
+                  <div class='inputDateDivi'>
+                    <label class='formLabeli'>Departing</label>
+                    <input class='inputdatee' type="date" name="departing" id="departing"/>
+                  </div>
+                  <div class='inputDateDivi'>
+                    <label class='formLabeli'>Returning</label>
+                    <input class='inputdatee' type="date" name="returning" id="returning"/>
+                  </div>
+                  <div class='buttonDivi'>
+                  <button class='buttoni' >Search</button>
+                  </div>
+                </form>
+              </div>
+
+        
+        <div class='containerdiv'>
+            <div  clasclasssName='textdiv'>
+           
+            </div>
+            <div class='photodiv'>
+                <div class='prphoto'>
+                    <div class='ksspng'><h2>PRISHTINA </h2>
+                    <img src='./assets/Flag_of_Kosovo.png'/>
+                    </div>
+                <img src='./assets/e228bf3be784ffff7a338ec8d9167d30-pristina.jpg'/>
+                </div>
+                <div>
+                    <div class='trphoto'>
+                    <div class='allpng'> <h2>TIRANA</h2>
+                    <img src='./assets/Flag_of_Albania.png'/>
+                    </div>
+                <img src='./assets/26 Incredible Things to do in Tirana, Albania - Travelling Balkans.jpeg'/>
+                </div>
+                </div>
+
+            </div>
+            <div class='secondphotos'>
+                <div>
+                    <div class='ullpng'>
+                    <h2>ULCINJ</h2>
+                        <img src='./assets/Flag_of_Montenegro.svg.png'/>
+                    </div>
+                <img src='./assets/ee07a2c3-city-49674-172bfd58a2c.jpg'/>
+                </div>
+                <div>
+                    <div class=trrpng>
+                    <h2>TURKEY</h2>
+                    <img src='./assets/Flag_of_Turkey.svg.png' />
+                    </div>
+                <img src='./assets/3bae040b-2afb-4b11-9542-859eeb8ebaf1.webp'/>
+                </div>
+                </div>
+                <div>
+                    <div class='eggpng'>
+                  
+               
+                    </div>
+                <img class="egp" src='./assets/egypt-1.jpg'/>
+                </div>
+            </div>
+
+
+            
+        </div>
+
+    </div>
+    <footer class="footer">
+        <div class="containerFooter">
+          <div class="footer__content">
+            <div class="footer__section">
+              <h3 class="footer__section-title">About Us</h3>
+              <p class="footer__section-text">{t('Traveldes')}</p>
+            </div>
+            <div class="footer__section">
+              <h3 class="footer__section-title">Contact Us</h3>
+              <p class="footer__section-text">123 Street, City Name</p>
+              <p class="footer__section-text">Email: info@example.com</p>
+              <p class="footer__section-text">Phone: +1 123-456-7890</p>
+            </div>
+            <div class="footer__section">
+              <h3 class="footer__section-title">Follow Us</h3>
+              <div class="footer__social-icons">
+                <a href="#" className="footer__social-link"><i className="fab fa-facebook-f"></i></a>
+                <a href="#" className="footer__social-link"><i className="fab fa-twitter"></i></a>
+                <a href="#" className="footer__social-link"><i className="fab fa-instagram"></i></a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="footer__bottom">
+          <p class="footer__bottom-text">© 2023 Your Travel Agency. All rights reserved.</p>
+        </div>
+      </footer>
+    
+</body>
+</html>
